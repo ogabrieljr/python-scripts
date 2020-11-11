@@ -1,5 +1,6 @@
-from imageai.Prediction import ImagePrediction
 import os
+
+from imageai.Prediction import ImagePrediction
 
 execution_path = os.getcwd()
 

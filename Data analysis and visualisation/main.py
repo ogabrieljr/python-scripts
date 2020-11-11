@@ -1,6 +1,5 @@
 import pandas
-import seaborn as sns
-from bokeh.plotting import ColumnDataSource, figure, output_file, show
+from bokeh.plotting import ColumnDataSource, figure, show
 
 data_frame = pandas.read_csv("data.csv")
 df1 = pandas.DataFrame(data_frame, columns=["Name", "Wage", "Value"])

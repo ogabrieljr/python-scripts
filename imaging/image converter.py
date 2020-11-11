@@ -1,5 +1,6 @@
 import os
 import sys
+
 from PIL import Image
 
 image_folder = sys.argv[1]

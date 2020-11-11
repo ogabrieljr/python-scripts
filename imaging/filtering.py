@@ -1,5 +1,6 @@
-from PIL import Image, ImageFilter
 import os
+
+from PIL import Image, ImageFilter
 
 for files in os.listdir("images"):
     img = Image.open(f"images\{files}")
