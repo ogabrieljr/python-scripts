@@ -1,9 +1,10 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import pyautogui
 import time
+
+import pyautogui
 import pyperclip
 import translators as ts
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 pyautogui.getActiveWindow().minimize()
 time.sleep(0.5)
@@ -33,6 +34,7 @@ for term in terms:
         text = "\n\n".join(content)
 
     pyautogui.hotkey("alt", "tab")
+    time.sleep(0.5)
     pyperclip.copy(term)
     pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("tab")
